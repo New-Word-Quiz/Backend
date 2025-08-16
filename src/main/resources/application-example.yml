@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/slang_quiz_app?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: 비밀번호를_여기에_적으세요
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: Asia/Seoul
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    # (중요) 기존 DB가 '비어있지' 않다면 팀원이 1회만 baseline 옵션을 켜야 함(아래 6단계에서 설명)
+
+server:
+  port: 8080
