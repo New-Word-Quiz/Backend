@@ -1,0 +1,31 @@
+# ===== IDE / OS =====
+.idea/
+*.iml
+out/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ===== Gradle / Build =====
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# ===== Logs / Temps =====
+logs/
+*.log
+*.tmp
+*.swp
+~$*
+*.bak
+
+# ===== Configs =====
+# 1) YAML: 전부 제외
+src/**/application*.yml
+
+# 2) Properties: 기본/프로필 전부 제외
+src/**/application*.properties
+
+# 3) 단, 예시 파일만 포함
+!src/**/application-example.properties
