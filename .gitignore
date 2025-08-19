@@ -1,4 +1,4 @@
-# ===== IDE / OS =====
+# IDE/OS
 .idea/
 *.iml
 out/
@@ -6,13 +6,13 @@ out/
 .DS_Store
 Thumbs.db
 
-# ===== Gradle / Build =====
+# Gradle/Build
 .gradle/
 **/build/
 !gradle/wrapper/gradle-wrapper.jar
 !gradle/wrapper/gradle-wrapper.properties
 
-# ===== Logs / Temps =====
+# Logs/Temps
 logs/
 *.log
 *.tmp
@@ -20,12 +20,7 @@ logs/
 ~$*
 *.bak
 
-# ===== Configs =====
-# 1) YAML: 전부 제외
+# Configs — yml 전부 제외, 실제 properties 제외, 예시만 포함
 src/**/application*.yml
-
-# 2) Properties: 기본/프로필 전부 제외
 src/**/application*.properties
-
-# 3) 단, 예시 파일만 포함
 !src/**/application-example.properties
